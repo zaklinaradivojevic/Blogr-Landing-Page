@@ -1,0 +1,355 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+body {
+  width: 100%;
+  height: 100%;
+}
+.header_section {
+  top: 0;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(
+    90deg,
+    hsl(13, 100%, 72%) 0%,
+    hsl(353, 100%, 62%) 35%,
+    hsl(13, 100%, 72%) 100%
+  );
+  z-index: -9999;
+  border-bottom-left-radius: 150px;
+  position: absolute;
+}
+.header_img {
+  top: 30px;
+  width: 100%;
+  height: 600px;
+  z-index: -2;
+  position: absolute;
+}
+.header_logo {
+  margin-top: 50px;
+  margin-left: 50px;
+  padding: 16px;
+  position: absolute;
+  background-color: transparent;
+}
+.nav {
+  width: 80%;
+  height: 150px;
+  margin-left: 160px;
+  margin-top: 40px;
+  position: absolute;
+  z-index: 1;
+}
+/* Style The Dropdown Button */
+.dropbtn {
+  margin-top: 20px;
+  background-color: transparent;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+header {
+  margin-top: 250px;
+  text-align: center;
+  line-height: 40px;
+}
+header h1 {
+  font-size: 40px;
+  color: #f1f1f1;
+}
+header p {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #f1f1f1;
+  font-size: 20px;
+}
+.nav_right {
+  float: right;
+  padding: 34px;
+}
+.login {
+  border: none;
+  background-color: transparent;
+  color: #f1f1f1;
+  font-size: 18px;
+  cursor: pointer;
+}
+.signin {
+  border: none;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  border-radius: 15px;
+  color: hsl(353, 100%, 62%);
+  cursor: pointer;
+  transition: all 2s ease;
+}
+.signin:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+.start {
+  border: none;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 25px;
+  color: hsl(353, 100%, 62%);
+  cursor: pointer;
+  transition: all 2s ease;
+}
+.start:hover {
+  border: 2px solid white;
+  background-color: transparent;
+  color: white;
+}
+.learn {
+  border: 2px solid white;
+  width: 150px;
+  height: 40px;
+  font-size: 18px;
+  border-radius: 25px;
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  transition: all 2s ease;
+}
+.learn:hover {
+  background-color: white;
+  color: hsl(353, 100%, 62%);
+}
+.desctop-section {
+  margin-top: 500px;
+  width: 100%;
+  height: auto;
+}
+.designed_section {
+  top: 100px;
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.section_title {
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: transparent;
+  z-index: 1;
+}
+.main_title {
+  margin: 0 auto;
+  margin-top: 150px;
+  font-size: 33px;
+  position: relative;
+}
+.desctop-img {
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 400px;
+  float: right;
+  position: relative;
+  z-index: -999;
+}
+.desctop_text {
+  width: 50%;
+  height: 670px;
+  float: left;
+  background-color: white;
+  text-align: center;
+}
+.designed {
+  margin-top: 260px;
+  width: 350px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relativ;
+  background-color: white;
+  text-align: left;
+}
+.robust {
+  margin-top: 70px;
+  width: 350px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relativ;
+  background-color: white;
+  text-align: left;
+}
+.main_desc {
+  margin-top: 20px;
+}
+.mobile-section {
+  top: 1500px;
+  width: 100%;
+  height: 450px;
+  position: absolute;
+}
+.mobile-img {
+  width: 50%;
+  height: 450px;
+  background-color: transparent;
+  position: absolute;
+}
+#mobile-img {
+  width: 100%;
+  height: 450px;
+  position: absolute;
+}
+.mobile-sectionbg {
+  top: 60px;
+  width: 100%;
+  height: 320px;
+  background-color: hsl(237, 17%, 21%);
+  z-index: -999;
+  position: absolute;
+  border-bottom-left-radius: 50px;
+}
+.mobile-bg {
+  top: 64px;
+  width: 600px;
+  height: 300px;
+  background-image: url("https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/8535986d81c99e4e10c0713823c511a1b8c4812d/images/bg-pattern-circles.svg");
+  background-size: cover;
+  object-fit: contain;
+  background-position: bottom;
+  z-index: -2;
+  background-color: transparent;
+  position: absolute;
+}
+.mobile-section-text {
+  top: 140px;
+  width: 50%;
+  height: 200px;
+  float: right;
+  position: relative;
+  color: white;
+}
+.mobile-text {
+  width: 350px;
+}
+.mobile-title {
+  margin-bottom: 30px;
+}
+.laptop-section {
+  margin-top: 900px;
+  width: 100%;
+  height: 550px;
+  background-color: transparent;
+}
+.laptop-section-part {
+  margin-top: 20px;
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+.laptop-section-img {
+  width: 400px;
+  height: 500px;
+  background-color: transparent;
+}
+.laptop-img {
+  width: 100%;
+  height: 100%;
+}
+.laptop-text {
+  top: 50px;
+  width: 50%;
+  height: 400px;
+  background-color: transparent;
+  position: relative;
+}
+.laptop {
+  margin-top: 40px;
+  width: 400px;
+  height: 160px;
+  background-color: transparent;
+}
+.laptop-title {
+  margin-bottom: 20px;
+}
+.footer-section {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  background-color: hsl(240, 10%, 16%);
+}
+.footer-logo {
+  margin-top: 40px;
+  margin-left: 40px;
+}
+.projects {
+  width: 100px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 60px;
+  text-align: center;
+}
+.company {
+  width: 70px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: center;
+}
+.connect {
+  width: 100px;
+  color: white;
+  margin-top: 50px;
+  margin-left: 100px;
+  text-align: center;
+}
