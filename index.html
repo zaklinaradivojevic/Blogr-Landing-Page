@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
   <title>Frontend Mentor | [Blogr]</title>
@@ -22,6 +26,7 @@
     <img class="header_logo"
       src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/8535986d81c99e4e10c0713823c511a1b8c4812d/images/logo.svg"
       alt="logo">
+
     <div class="nav">
       <div class="dropdown">
         <button class="dropbtn">
@@ -72,14 +77,81 @@
         <button class="signin"> Sign Up</button>
       </div>
     </div>
+    <div class="menu-navigation">
+      <div class="open_menu">
+        <img id="menu" onclick="openMenu()"
+          src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/d567b0593ae05c3adce836ca8dde3dd71bfb1902/images/icon-hamburger.svg"
+          alt="menu">
+      </div>
+      <div class="close_menu">
+        <img id="close"
+          src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/d567b0593ae05c3adce836ca8dde3dd71bfb1902/images/icon-close.svg"
+          alt="close_menu">
+      </div>
+      <div class="menu_nav" id="menu_nav">
+        <div class="menu-content">
+          <div class="menu_dropdown">
+            <button class="menu_dropbtn">
+              Product
+              <img class="arrow"
+                src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/8535986d81c99e4e10c0713823c511a1b8c4812d/images/icon-arrow-light.svg"
+                alt="arow">
+            </button>
+            <div class="menu_dropdown-content">
+              <a href="#"> Overview</a>
+              <a href="#">Pricing</a>
+              <a href="#">Marketplace</a>
+              <a href="#">Features</a>
+              <a href="#">Integrations</a>
+            </div>
+          </div>
+          <div class="menu_dropdown">
+            <button class="menu_dropbtn">
+              Company
+              <img class="arrow"
+                src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/8535986d81c99e4e10c0713823c511a1b8c4812d/images/icon-arrow-light.svg"
+                alt="arow">
+            </button>
+            <div class="menu_dropdown-content">
+              <a href="#">About</a>
+              <a href="#">Team</a>
+              <a href="#">Blog</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+
+          <div class="menu_dropdown">
+            <button class="menu_dropbtn">
+              Connect
+              <img class="arrow"
+                src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/8535986d81c99e4e10c0713823c511a1b8c4812d/images/icon-arrow-light.svg"
+                alt="arow">
+            </button>
+            <div class="menu_dropdown-content">
+              <a href="#">Contact</a>
+              <a href="#"> Newsletter</a>
+              <a href="#">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="menu_log">
+            <button class="menu_login"> Login</button>
+            <button class="menu_signin"> Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <header>
-      <h1>A modern publishing platform</h1>
-      <p>
+
+
+      <h1 id="title">A modern publishing platform</h1>
+      <p id="text">
         Grow your audience and build your online brand
       </p>
-      <button class="start">Start for Free</button>
-      <button class="learn">Learn More</button>
+      <button id="start" class="start">Start for Free</button>
+      <button id="learn" class="learn">Learn More</button>
     </header>
+
   </section>
   <section class="desctop-section">
     <div class="designed_section">
@@ -87,7 +159,7 @@
         <h1 class="main_title">Designed for the future</h1>
       </div>
       <div class="desctop-img">
-        <img
+        <img id="desctop-img"
           src="https://raw.githubusercontent.com/zaklinaradivojevic/Blogr-Landing-Page/8535986d81c99e4e10c0713823c511a1b8c4812d/images/illustration-editor-desktop.svg"
           alt="desctop">
       </div>
@@ -199,6 +271,7 @@
       Coded by <a href="#">Zaklina Radivojevic</a>.
     </div>
   </section>
+  <script src="index.js"></script>
 </body>
 
 </html>
