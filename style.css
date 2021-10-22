@@ -241,6 +241,7 @@ header p {
   width: 100%;
   height: 450px;
   position: absolute;
+ 
 }
 .mobile-img {
   width: 50%;
@@ -262,6 +263,8 @@ header p {
   z-index: -999;
   position: absolute;
   border-bottom-left-radius: 50px;
+  border-top-right-radius: 50px;
+ 
 }
 .mobile-bg {
   top: 64px;
@@ -274,6 +277,7 @@ header p {
   z-index: -2;
   background-color: transparent;
   position: absolute;
+ 
 }
 .mobile-section-text {
   top: 140px;
@@ -331,7 +335,16 @@ header p {
   width: 100%;
   height: 400px;
   display: flex;
+  border-top-right-radius:50px;
   background-color: hsl(240, 10%, 16%);
+}
+.footer-section a{
+  text-decoration: none;
+  color: hsl(240, 2%, 79%);
+  cursor: pointer;
+}
+.footer-section a:hover{
+  opacity:0.7;
 }
 .footer-logo {
   margin-top: 40px;
@@ -341,21 +354,21 @@ header p {
   width: 100px;
   color: hsl(240, 2%, 79%);
   margin-top: 50px;
-  margin-left: 60px;
+  margin-left: 160px;
   text-align: center;
 }
 .company {
   width: 70px;
   color: hsl(240, 2%, 79%);
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 230px;
   text-align: center;
 }
 .connect {
   width: 100px;
   color: hsl(240, 2%, 79%);
   margin-top: 50px;
-  margin-left: 100px;
+  margin-left: 270px;
   text-align: center;
 }
 .attribution {
@@ -369,7 +382,17 @@ header p {
 .attribution a {
   color: white;
 }
-
+@media screen and (max-width: 1400px){
+  .menu_nav{
+    display:none;
+  }
+  #menu{
+    display:none;
+  }
+  .close_menu{
+    display:none;
+  }
+}
 
 @media screen and (max-width: 700px) {
   body{
@@ -398,7 +421,7 @@ header p {
 }
 #close{
   margin-top:80px;
-  margin-right:70px;
+  margin-right:50px;
   float:right;
   display:none;
 }
@@ -595,6 +618,8 @@ header p {
   z-index: -999;
   position: absolute;
   border-bottom-left-radius: 50px;
+  border-top-right-radius:50px;
+
 }
 .mobile-bg {
   top: 220px;
