@@ -171,6 +171,7 @@ header p {
   background-color: white;
   color: hsl(353, 100%, 62%);
 }
+
 .desctop-section {
   margin-top: 500px;
   width: 100%;
@@ -212,6 +213,7 @@ header p {
   background-color: white;
   text-align: center;
   font-family: "Ubuntu", sans-serif;
+  color:hsl(208, 49%, 24%);
 }
 .designed {
   margin-top: 260px;
@@ -321,6 +323,7 @@ header p {
   height: 400px;
   background-color: transparent;
   position: relative;
+  color:hsl(208, 49%, 24%);
 }
 .laptop {
   margin-top: 40px;
@@ -337,6 +340,7 @@ header p {
   display: flex;
   border-top-right-radius:50px;
   background-color: hsl(240, 10%, 16%);
+  position: absolute;
 }
 .footer-section a{
   text-decoration: none;
@@ -350,26 +354,30 @@ header p {
   margin-top: 40px;
   margin-left: 40px;
 }
+.footer_text{
+  margin-bottom: 10px;
+}
 .projects {
   width: 100px;
   color: hsl(240, 2%, 79%);
   margin-top: 50px;
-  margin-left: 160px;
-  text-align: center;
+   text-align: center;
+   margin-left: 20%;
+  position: absolute;
 }
 .company {
-  width: 70px;
+  width: 100px;
   color: hsl(240, 2%, 79%);
   margin-top: 50px;
-  margin-left: 230px;
-  text-align: center;
+  margin-left: 50%;
+ position: absolute;
 }
 .connect {
   width: 100px;
   color: hsl(240, 2%, 79%);
   margin-top: 50px;
-  margin-left: 270px;
-  text-align: center;
+   margin-left: 80%;
+   position: absolute;
 }
 .attribution {
   font-size: 11px;
@@ -377,7 +385,8 @@ header p {
   text-align: center;
   color: lightslategray;
   text-align: center;
-  margin-left: 140px;
+  margin-left: 40%;
+  bottom: 0;
 }
 .attribution a {
   color: white;
@@ -387,6 +396,9 @@ header p {
     display:none;
   }
   #menu{
+    display:none;
+  }
+  #close{
     display:none;
   }
   .close_menu{
@@ -418,12 +430,13 @@ header p {
   margin-right:70px;
   float:right;
   position: relative;
+  display: block;
 }
 #close{
   margin-top:80px;
   margin-right:50px;
   float:right;
-  display:none;
+  display: none;
 }
 .menu-content{
   margin:0 auto;
@@ -696,55 +709,64 @@ header p {
 .footer-section {
   margin-top: 100px;
   width: 100%;
-  height: 890px;
+  height: 900px;
   background-color: hsl(240, 10%, 16%);
+  position: absolute;
+  text-align: center;
+}
+.footer{
+  width: 150px;
+  height:auto;
   display: flex;
   flex-wrap: wrap;
-  position:relative;
+  align-self: center;
 }
 .footer-logo {
-  width:500px;
-  height:100px;
+  top:30px;
+  left: 160px;
+  position: absolute;
+  text-align: center;
+}
+.footer_text{
+  text-align: center;
+  margin-bottom:20px;
+  margin-right: 20px;
 }
 .projects {
-  width:500px;
-  height:100px;
+  top: 160px;
   color:hsl(240, 2%, 79%);
- 
+  right:250px;
+  position:absolute;
+  text-align: center;
 }
 .projects a{
-  padding:2px;
-  margin-left: 220px;
-  text-align: center;
   display: flex;
   flex-wrap: wrap;
+  text-align: center;
 }
 .company {
-  margin-right:90px; 
-  padding:20px;
-  width:500px;
-  height:100px;
   color:hsl(240, 2%, 79%);
+  text-align: center;
+  right:290px;
+  top:420px;
+  position:absolute;
+
 }
 .company  a{
-  padding:2px;
-  margin-left: 170px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
 }
 
 .connect {
-  margin-right:90px; 
-  padding:20px;
-  width:100%;
-  height:100px;
-  color: hsl(240, 2%, 79%);
+  color:hsl(240, 2%, 79%);
+  text-align: center;
+  right:270px;
+  top:650px;
+  position:absolute;
  }
 
  .connect a{
-  padding:2px;
-  margin-left: 170px;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
@@ -757,6 +779,7 @@ header p {
   color: lightslategray;
   text-align: center;
   margin-left: 140px;
+  bottom: 0;
 }
 .attribution a {
   color: white;
